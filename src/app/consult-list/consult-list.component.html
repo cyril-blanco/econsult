@@ -1,0 +1,20 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle *ngFor="let consult of consults$ | async">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        eConsult #{{consult.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{countProcessedImages(consult.images)}}/{{consult.images.length}} processed
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div *ngFor="let image of consult.images" style="float: left; margin: 0 30px">
+      <img [src]="image.url" height="200px" [class.processed]="image.processed">
+      <div>
+        <button mat-stroked-button color="accent" (click)="done(consult.id, image.id)" *ngIf="!image.processed">No redaction needed</button>
+        <button mat-stroked-button color="primary" [routerLink]="[consult.id, 'censors', image.id]">Redact</button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

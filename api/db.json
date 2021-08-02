@@ -1,0 +1,54 @@
+{
+  "consults": [
+    {
+      "id": 1,
+      "images": [
+        {
+          "id": 1,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=1"
+        },
+        {
+          "id": 2,
+          "processed": true,
+          "url": "https://picsum.photos/500?random=2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "images": [
+        {
+          "id": 3,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "images": [
+        {
+          "id": 4,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=4"
+        },
+        {
+          "id": 5,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=5"
+        },
+        {
+          "id": 6,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=6"
+        },
+        {
+          "id": 7,
+          "processed": false,
+          "url": "https://picsum.photos/500?random=7"
+        }
+      ]
+    }
+  ]
+}

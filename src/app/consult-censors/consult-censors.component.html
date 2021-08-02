@@ -1,0 +1,5 @@
+<img [src]="(image$ | async).url" height="500px">
+<div>
+  <button mat-stroked-button color="accent" (click)="addCensor()">Add censor</button>
+  <button mat-stroked-button color="primary" (click)="done()">Done</button>
+</div>
